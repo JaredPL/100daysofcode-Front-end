@@ -1,0 +1,224 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Website for linear-gradient
+https://cssgradient.io/
+*/
+body
+{
+  font-family: Roboto;
+}
+
+.navbar
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: rgba(45,60,253,1);
+  z-index: 3;
+}
+
+#logo
+{
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-left: 50px;
+}
+.searchbar_container
+{
+  display: flex;
+  height: 60px;
+  width: 350px;
+  align-items: center;
+}
+
+.searchbar
+{
+  
+  height: 24px;
+  width: 300px;
+  padding: 5px 5px 5px 15px;
+  outline: none;
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+  color: white;
+  background: rgb(4, 49, 172);
+}
+
+button
+{
+  background: rgb(0, 181, 198);
+  color: white;
+  height: 34px;
+  width: 50px;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+button:hover
+{
+  background: rgb(0, 198, 76);
+  transition: 1.4s;
+}
+
+.links
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 300px;
+  margin-right: 50px;
+}
+
+a
+{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover
+{
+  font-size: 1.6rem;
+  transition: 2s;
+  color: red;
+}
+
+main
+{
+  width: 100vw;
+}
+
+html 
+{
+  scroll-behavior: smooth;
+}
+
+.HOME
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, rgb(202, 6, 223) 0%, rgba(45,60,253,1) 100%);
+}
+
+.HOME img
+{
+  height: 400px;
+  border-radius: 20px;
+}
+
+.img_container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1
+{
+  position: absolute;
+  color: white;
+  font-style: italic;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+h1:hover
+{
+  font-size: 4rem;
+  transition: 2s;
+}
+
+.ABOUT
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, rgb(127, 125, 203) 0%, rgba(45,60,253,1) 100%);
+}
+
+.ABOUT img
+{
+  height: 70%;
+  border-radius: 20px;
+}
+
+.ABOUT img:hover
+{
+  transition: 2s;
+  opacity: 0;
+}
+
+.contact_container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_container img
+{
+  height: 450px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.container_red
+{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  width: 675px;
+  border-radius: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container_red:hover
+{
+  opacity: 1;
+  transition: 0.5s;
+  background: red;
+}
+
+.container_red p
+{
+  font-size: 3rem;
+  color: white;
+}
+
+.CONTACT
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, rgb(202, 6, 223) 0%, rgba(45,60,253,1) 100%);
+}
+
+
+
+
+
