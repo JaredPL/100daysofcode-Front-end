@@ -1,0 +1,184 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  font-family: Roboto;
+  background-color: rgb(235, 235, 235);
+}
+
+.container
+{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.left
+{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
+  width: 70%;
+}
+
+.logo p
+{
+  font-size: 1.5rem;
+  text-align: left;
+  padding-bottom: 35px;
+}
+
+img
+{
+  width: 300px;
+}
+
+.right
+{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form
+{
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 50%;
+}
+
+input:hover
+{
+  color: black;
+}
+
+input
+{
+  outline: none;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+#login
+{
+  background-color: rgb(49, 134, 253);
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#login:hover
+{
+  background-color: rgb(30, 110, 222);
+}
+
+.creacte-account_container
+{
+  border-top: 1px solid rgb(200, 200, 200);
+  display: flex;
+  justify-content: center;
+}
+
+#createacc
+{
+  margin-top: 30px;
+  width: 50%;
+  border: none;
+  background: rgb(26, 185, 29);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#createacc:hover
+{
+  background: rgb(22, 162, 25);
+}
+
+a
+{
+  margin: 0 auto;
+  text-decoration: none;
+  color: rgb(49, 134, 253);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+@media (max-width: 900px)
+{
+  .container
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .left
+  {
+    width: 100vw;
+    height: 35vh;
+    align-items: stretch;
+  }
+
+  .right
+  {
+    width: 100vw;
+    height: 65vh;
+  }
+  
+  .logo
+  {
+    margin-top: 50px;
+    height: 60%;
+    width: 50%;
+  }
+
+  img
+  {
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .logo p
+  {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 35px;
+  }
+}
+
+
+
