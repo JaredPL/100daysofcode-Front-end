@@ -1,0 +1,318 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+html 
+{
+  scroll-behavior: smooth;
+}
+
+nav
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(27,27,248,1) 0%,
+    rgba(246,95,95,1) 100%);
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 10%;
+    color: white;
+    font-family: Lobster;
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+
+.searchbar_container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.searchbar
+{
+
+    width: 70%;
+    height: 60%;
+    padding-left: 20px;
+    border-radius: 20px 0 0 20px;
+    border: 2px solid white;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+
+
+.search-btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(154, 92, 240);
+    height: 60%;
+    width: 8%;
+    border: 2px solid white;
+    border-left: none;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+}
+
+.search-btn:hover
+{
+    background: rgb(240, 91, 91);
+    transition: 0.4s ease-in-out;
+}
+
+.id_buttons
+{   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 35%; 
+}
+
+.id_buttons a
+{
+    color: white;
+    text-decoration: none;
+    font-family: Lobster;
+}
+
+.id_buttons a:hover
+{
+    transform: translateY(-40%);
+    color: rgb(5, 5, 5);
+    transition: 0.2s ease-in-out;
+}
+
+.content
+{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: linear-gradient(90deg, rgba(27,27,248,1) 0%,
+    rgba(246,95,95,1) 100%);
+}
+
+.home
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.img_container
+{
+    width: 80%;
+    position: relative;
+    cursor: pointer;
+}
+
+.img_container:hover
+{
+    transform: scale(1.1, 1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.img_container p
+{
+    display: inline-block;
+    position: absolute;
+    color: rgb(19, 18, 0);
+    font-family: Lobster;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img_container p:hover
+{
+    color: azure;
+}
+
+.img_container img
+{
+    object-fit: contain;
+    height: 100%; 
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.about p
+{
+    font-weight: 1000;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.github
+{
+    height: 40vh;
+    border-radius: 50%; 
+}
+
+.github:hover
+{
+    border: 3px solid white;
+    transform: rotate(360deg);
+    transition: 0.9s ease-in-out;
+}
+
+.contact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+form
+{
+  display: flex;
+  flex-direction: column;
+  background: black;
+  border-radius: 6px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  padding: 20px 20px;
+  height: 70vh;
+  width: 70%;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+form div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.txt
+{   
+    display: flex;
+    outline: none;
+    background: black;
+    color: white;
+    width: 40%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+::placeholder
+{
+    color: white;
+}
+
+h1
+{
+    font-size: 1.7rem;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+textarea
+{
+    display: flex;
+    justify-content: flex-start;
+    outline: none;
+    height: 50%;
+    background: black;
+    color: white;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    resize: none;
+}
+
+#send
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+    background: none;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    margin-top: 20px;
+    width: 25%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#send:hover
+{
+    background: white;
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+
+
+
+@media (max-width: 1025px)
+{
+    .logo
+    {
+        font-size: 1.2rem;
+    }
+    .id_buttons
+    {
+        font-size: 12px;
+    }
+    .content
+    {
+        height: 300vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+/*
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV.
+*/
