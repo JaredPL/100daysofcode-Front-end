@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">	
+		<link rel="icon" href="images/logo.png">
+        <title>YouTube</title>		
+	</head>
+	<body>
+        <div class="sidebar">
+            <img src="icons2/hamburger-menu.svg" id="btn" class="icon" onclick="myFunction2()"/>
+            <div class="icon-container">
+                <img src="icons2/home.svg" class="icon2"/>
+                <div class="icon-text">Główna</div>
+            </div>
+            <div class="icon-container">
+                <img src="icons2/shorts.svg" class="icon2"/>
+                <div class="icon-text">Shorts</div>
+            </div>
+            <div class="icon-container">
+                <img src="icons2/subscriptions.svg" class="icon2"/>
+                <div class="icon-text">Subskrypcje</div>
+            </div>
+            <div class="icon-container">
+                <img src="icons2/library.svg" class="icon2"/>
+                <div class="icon-text">Biblioteka</div>
+            </div>
+        </div>
+
+        <div class="sidebar2" id="sidebar2" onclick="myFunction()">
+            <div class="logo-container">
+                <img src="icons2/hamburger-menu.svg" id="btn" class="icon"/>
+                <a href="index.html">
+                    <img src="images/YouTube-Logo.png" id="logo">
+                </a>
+            </div>
+            
+            <div class="icon-container2">
+                <img src="icons2/home.svg" class="icon2"/>
+                <div class="icon-text">Główna</div>
+            </div>
+            <div class="icon-container2">
+                <img src="icons2/shorts.svg" class="icon2"/>
+                <div class="icon-text">Shorts</div>
+            </div>
+            <div class="icon-container2">
+                <img src="icons2/subscriptions.svg" class="icon2"/>
+                <div class="icon-text">Subskrypcje</div>
+            </div>
+            <div class="icon-container2">
+                <img src="icons2/library.svg" class="icon2"/>
+                <div class="icon-text">Biblioteka</div>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <a href="index.html"><img src="images/YouTube-Logo.png" id="logo2"></a>
+            <!--<img src="/images/YouTube-Logo.png" id="logo2">-->
+            <input type="text" class="searchbar" placeholder="Search">
+            <button class="search-btn">
+                <img src="icons/search.svg">
+            </button>
+            <img src="images/keyboard.png" class="icon-nav">
+
+            <img src="icons/voice-search-icon.svg" class="mic">
+            <div class="right-section">
+                <img src="icons/upload.svg" class="mic2">
+                <img src="icons/notifications.svg" class="mic2">
+                <img src="images/elon.jpeg" class="avatar">
+            </div>
+        </div>
+
+
+
+        <div class="main">
+            
+        </div>
+
+        <script>
+            function myFunction() 
+            {
+                document.getElementById("sidebar2").style.zIndex = "-2";
+            }
+
+            function myFunction2() 
+            {
+                document.getElementById("sidebar2").style.zIndex = "2";
+            }
+
+		</script>
+
+	</body>
+	
+</html>

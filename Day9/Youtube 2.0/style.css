@@ -1,0 +1,263 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+
+.sidebar
+{
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 74px;
+    border-right: 1px solid rgb(218, 218, 218);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.sidebar2
+{
+    background: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    z-index: -2;
+    border-right: 1px solid rgb(218, 218, 218);
+    padding-left: 4px;
+}
+
+.logo-container
+{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+#logo
+{
+    height: 50px;
+    margin-top: 12px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+.sidebar2 .icon
+{   
+    margin-top: 18px;
+    margin-left: 12px;
+    margin-bottom: 80px;
+    width: 26px;
+    height: 26px;
+}
+
+.sidebar2 .icon-container2
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 200px;
+    height: 32px;
+    margin-top: -27px;
+    margin-left: 8px;
+    margin-bottom: 32px;
+    padding: 6px;
+    padding-left: 12px;
+    cursor: pointer;
+    
+}
+
+.icon-container2:hover
+{
+    background: #EBEBEB;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+}
+
+.icon
+{
+    width: 26px;
+    margin-top: 18px;
+    margin-bottom: 30px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.icon:hover
+{
+    background: #EBEBEB;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.icon2
+{
+    width: 24px;
+}
+
+.icon-container
+{
+    display: flex;
+    width: 65px;
+    height: 78px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.icon-container:hover
+{
+    border-radius: 6px;
+    background: #EBEBEB;
+}
+
+.icon-text
+{
+    margin-top: 8px;
+    font-size: 11px;
+}
+
+.icon-container2 .icon-text
+{
+    padding-left: 4px;
+    padding-bottom: 7px;
+    font-size: 14px;
+    margin-left: 14px;
+}
+
+.navbar
+{
+    
+    position: fixed;
+    top: 0;
+    left: 74px;
+    right: 0;
+    height: 74px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+#logo2
+{
+    height: 50px;
+    margin-left: 4px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.searchbar
+{
+    width: 450px;
+    padding: 11px 11px 11px 16px;
+    border-radius: 20px 0px 0px 20px;
+    border: 1px solid rgb(218, 218, 218);
+    outline: none;
+    font-size: 16px;
+    margin-left: 250px;
+}
+
+.search-btn
+{
+    height: 43px;
+    width: 60px;
+    border-left: none;
+    border-top: 1px solid rgb(218, 218, 218);
+    border-bottom: 1px solid rgb(218, 218, 218);
+    border-right: 1px solid rgb(218, 218, 218);
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+    background: #f8f8f8;
+}
+
+.search-btn:hover
+{
+    background: #eeeeee;
+}
+
+.search-btn img
+{
+    height: 24px;
+}
+
+.icon-nav
+{
+    height: 20px;
+    position: absolute;
+    left: 790px;
+    cursor: pointer;
+}
+
+.mic
+{
+    height: 24px;
+    margin-left: 16px;
+    margin-bottom: 2px;
+    padding: 9px;
+    background: #f8f8f8;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mic2
+{
+    height: 24px;
+    padding: 9px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mic:hover
+{
+    background: #eeeeee;
+}
+
+.mic2:hover
+{
+    background: #eeeeee;
+}
+
+.avatar
+{
+    height: 30px;
+    border-radius: 50%;
+    padding: 9px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.right-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 74px;
+    width: 160px;
+    margin-left: 350px;
+}
+
+.main
+{
+    background: #fff;
+    height: 100vh;
+    width: calc(100% - 74px);
+    margin-left: 74px;
+}
+
