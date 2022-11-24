@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="post_container">
+        <div class="container_1">
+            <img src="images/avatar.jpg">
+            <div class="text">
+                <p id="name">Walter White</p>
+                <p id="nick">@Heisenberg420 &middot; 22 Nov</p>
+                <p>ahh, wire</p>
+            </div>
+            <i class='bx bx-dots-horizontal-rounded'></i>
+        </div>
+        <div class="container_2">
+            <img src="images/wire.jpg" alt="">
+        </div>
+        <div class="container_3">
+            <div class="icon_block com">
+                <i class='bx bx-message-rounded'></i>
+                <p>38</p>
+            </div>
+            <div class="icon_block rep">
+                <i class='bx bx-refresh'></i>
+                <p>8</p>
+            </div>
+            <div class="icon_block like">
+                <i class='bx bx-heart' id="heart"></i>
+                <p>781</p>
+            </div>
+            <i id="share" class='bx bx-download'></i>
+        </div>
+    </div>
+    
+<script>
+    let heart = document.querySelector("#heart");
+
+    heart.addEventListener("click", ()=>
+    {
+        heartLiked();
+    });
+
+    function heartLiked() 
+    {
+        if(heart.classList.contains("bx-heart"))
+        {
+            heart.classList.replace("bx-heart", "bxs-heart");//replacing the iocns class
+        }
+        else
+        {
+            heart.classList.replace("bxs-heart","bx-heart");//replacing the iocns class
+        }
+    }
+</script>    
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+*
+{
+    margin: 0;
+    font-family: Roboto;
+}
+
+.post_container
+{
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 45vw;
+}
+
+.post_container:hover
+{
+    background: rgb(243, 243, 243);
+    transition: 0.3s ease-in-out;
+}
+
+.container_1
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.container_1 img
+{
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.text
+{
+    height: 70%;
+    width: 75%;
+    font-size: 15px;
+}
+
+#name
+{
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#name:hover
+{
+    text-decoration: underline;
+}
+
+#nick
+{
+    display: inline-block;
+    color: rgb(83, 100, 113);
+    cursor: pointer;
+}
+
+
+.bx-dots-horizontal-rounded:hover 
+{
+    padding: 7px;
+    background: #d0e9f8;
+    color: #1DA1F2;
+    transition: 0.3s ease-in-out;   
+}
+
+.container_2
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_2 img
+{
+    width: 75%;
+    height: auto; 
+    border-radius: 5%;
+}
+
+.container_3
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 100%;
+}
+
+.container_3 p
+{
+    display: inline-block;
+    color: rgb(83, 100, 113);
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.icon_block
+{
+    display: flex;
+    width: 12%;
+    align-items: center;
+    cursor: pointer;
+}
+
+i
+{
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.com,.rep,.like,#share
+{
+    color: rgb(83, 100, 113);
+}
+
+.com:hover p
+{
+    color: #1DA1F2;
+    transition: 0.3s ease-in-out;
+}
+
+.com:hover i
+{
+    padding: 7px;
+    background: #d0e9f8;
+    color: #1DA1F2;
+    transition: 0.3s ease-in-out;
+}
+
+.rep:hover p
+{
+    color: #25D366;
+    transition: 0.3s ease-in-out;
+}
+
+.rep:hover i
+{
+    padding: 7px;
+    background: #d3eedd;
+    color: #25D366;
+    transition: 0.3s ease-in-out;
+}
+
+.like:hover p
+{
+    color: #F91880;
+    transition: 0.3s ease-in-out;
+}
+
+
+.like:hover i
+{
+    padding: 7px;
+    background: pink;
+    color: #F91880;
+    transition: 0.3s ease-in-out;
+}
+
+#share:hover 
+{
+    padding: 7px;
+    background: #d0e9f8;
+    color: #1DA1F2;
+    transition: 0.3s ease-in-out;   
+}
+
+.bxs-heart
+{
+    color: #F91880;
+}
+
+.bx
+{
+    font-size: 24px;
+    cursor: pointer;
+}
+
