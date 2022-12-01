@@ -1,0 +1,299 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Kumbh Sans;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.logo_container
+{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    border: 1px solid white;
+}
+
+.logo
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(29,185,84,1);
+    /*background: linear-gradient(90deg, rgba(29,185,84,1) 0%, rgba(12,47,24,1) 100%);*/
+    border: 2px solid white;
+    width: 160px;
+    height: 40%;
+    padding: 8px 8px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-links
+{
+    z-index: 1;
+    display: flex;
+    flex: 2;
+    border: 1px solid darkkhaki;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    color: white;
+    list-style: none;
+    font-weight: 400;
+}
+
+.nav-links li:hover
+{
+    transform: translateY(-20%);
+    
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover
+{
+    color: #1DB954;
+    transition: all 0.3s ease-in-out;   
+}
+
+.login_container
+{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    border: 1px solid white;
+}
+
+.sign-in
+{
+    position: relative;
+    height: 50%;
+    padding: 5px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;  
+}
+
+.sign-in:after
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border: none;
+    background: #1DB954;
+    transition: all 0.35s;
+    border-radius: 6px;
+}
+
+.sign-in p
+{
+    position: relative;
+    z-index: 2;
+}
+
+.sign-in:hover:after
+{
+    width: 100%;
+}
+
+.popup
+{
+    position: absolute;
+    top: 80px;
+    right: 1.5rem;
+    background: white;
+    border-radius: 6px;
+    width: 340px;
+    height: 300px;
+    padding: 0px 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.popup.active
+{
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.popup form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.close
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: flex-end;
+    border: none;
+    background: none;
+    color: black;
+}
+
+.close:hover .bxs-log-out
+{
+    color: rgb(142, 142, 142);
+    transition: all 0.25s ease-in-out;
+}
+
+.bxs-log-out
+{
+    color: black;
+}
+
+.popup form label
+{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.popup form input[type=text]
+{
+    border-radius: 6px;
+    font-size: 16px;
+    padding-left: 10px;
+    height: 40px;
+    width: 80%;
+    border: 2px solid gray;
+    margin-top: -15px;
+}
+
+.popup form input[type=text]:hover
+{
+    border: 2px solid black;
+}
+
+.popup form input[type=text]:focus
+{
+    border: 3px solid black;
+}
+
+.popup form input[type="checkbox"]
+{
+    align-self: flex-start;
+    margin-right: 4px;
+    accent-color: #1DB954;
+}
+
+.popup form input[type="submit"]
+{
+    background-color: #2eda6a;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    width: 28%;
+    padding: 10px 22px;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.popup form input[type="submit"]:hover
+{
+    background-color: #45e17b;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
+}
+
+
+
+/*
+.sign-in:hover
+{
+    background: #1DB954;
+}
+
+.sign-in:hover:after
+{
+    width: 100%;
+}
+*/
+
+
+.content
+{
+    margin-top: 60px;
+    height: calc(100vh - 121px);
+    background-image: url("images/2109.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    background: rgba(0, 0, 0, 1);
+    border-top: 1px solid rgb(31, 31, 31);
+}
+
+i
+{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.bxl-html5:hover
+{
+    transition: 0.3s ease-in-out;
+    color: #ff5100;
+}
+
+.bxl-css3:hover
+{
+    transition: 0.3s ease-in-out;
+    color: #2f93fe;
+}
+
+.bxl-github:hover
+{
+    transition: 0.3s ease-in-out;
+    color: #47ae49;
+}
+
+@media (max-width: 1000px)
+{
+    .nav-links a
+    {
+        color: red;
+    }
+}
