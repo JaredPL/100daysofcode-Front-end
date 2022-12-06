@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap'); 
+*
+{
+    margin: 100px;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+button
+{
+    height: 86px;
+    width: 300px;
+    color: white;
+    background: rgb(224, 21, 21);
+    cursor: pointer;
+    font-size: 40px;
+    border-radius: 16px;
+    border: none;
+}
+
+button:hover
+{
+    background: rgb(224, 61, 61);
+    transition: 0.3s ease-in-out;
+}
+
+button:focus
+{
+    background: rgb(137, 119, 119);
+    transition: all ease-in-out;
+
+}
+
+
+
+
+
