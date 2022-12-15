@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+  margin: 0;
+  color: white;
+}
+
+html 
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+  font-family: Kumbh Sans;
+}
+
+/* Home */
+.home
+{
+  height: 100vh;
+  background: url('images/wall2.webp') 
+  no-repeat center center/cover;
+}
+
+
+/* Navbar */
+
+.navbar 
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 1.5rem;
+  height: 60px;
+}
+
+.navbar .logo
+{
+  font-size: 2.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.navbar .empty
+{
+  flex: 2;
+}
+
+.navbar .nav-links
+{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.navbar .nav-links li
+{
+  margin: 0 1rem;
+}
+
+.navbar .nav-links a
+{
+  font-weight: 600;
+  text-decoration: none;
+  padding: 5px 16px;
+}
+
+.navbar .nav-links #home-link
+{
+  color: black;
+  background: white;
+  border-radius: 16px;
+}
+
+.navbar .nav-links a:hover
+{
+  color: black;
+  background: white;
+  border-radius: 16px;
+}
+
+.fa-solid
+{
+  position: absolute;
+  top: 12px;
+  right: 22px;
+  opacity: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+/* Home Content */
+
+.home-content
+{
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+  height: calc(100vh - 100px);
+  border: 1px solid yellow;
+}
+
+.home-content h1
+{
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+.home-content p
+{
+  font-size: 1.2rem;
+}
+
+.home-content .btn-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button
+{
+  padding: 0.5rem 4rem;
+  font-size: 2.8rem;
+  font-weight: 400;
+  border-radius: 24px;
+  background: rgb(107, 6, 144);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+/* About */
+
+.about
+{
+  height: 100vh;
+}
+
+/* Contact */
+
+.contact
+{
+  height: 100vh;
+}
+
+
+
+@media (max-width: 650px)
+{
+
+  .navbar .nav-links
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 1.3rem 0;
+    opacity: 0;
+  }
+
+  .navbar .nav-links
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 1.3rem 0;
+    opacity: 0;
+  }
+
+  .navbar .nav-links.active
+  {
+    opacity: 1;
+  }
+
+  .navbar .nav-links li
+  {
+    margin: 2rem 0;
+  }
+
+  .navbar .nav-links a
+  {
+    position: absolute;
+    right: 60px;
+    left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 20px;
+  }
+
+  .fa-solid
+  {
+    opacity: 1;
+  }
+}
+
+
+
