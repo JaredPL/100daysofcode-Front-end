@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); 
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins' , sans-serif;
+}
+
+.navbar
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: rgb(52, 113, 254);
+  color: white;
+  z-index: 2;
+}
+
+.navbar .logo
+{
+  position: relative;
+  font-weight: 500;
+  letter-spacing: -1px;
+  font-size: 1.8rem;
+}
+
+.navbar .logo::before
+{
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: white;
+  bottom: 5px;
+  left: 0;
+  border-radius: 10px;  
+}
+.navbar .searchbar_container
+{
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.searchbar_container .searchbar
+{
+  font-size: 1rem;
+  padding: 8px 1.5rem 8px 1.5rem;
+  width: 70%;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+
+.searchbar_container .fa-solid
+{
+  position: absolute;
+  right: 16px;
+  opacity: 1;
+  font-size: 1.5rem;
+  color: rgb(52, 113, 254);
+}
+
+.navbar i
+{
+  position: absolute;
+  right: 2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.navbar .fa-xmark
+{
+  font-size: 1.8rem;
+}
+
+.navbar .navlinks
+{
+  display: flex;
+  list-style: none;
+}
+
+.navlinks li
+{
+  margin-right: 2rem;
+}
+
+.navlinks li a
+{
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  padding: 0.2rem 1rem;
+  border-radius: 20px;
+  border: 2px solid white;
+  transition: all 0.2s ease-in;
+}
+
+.navlinks li a:hover
+{
+  background: white;
+  color: rgb(52, 113, 254);
+}
+
+
+@media (max-width: 950px)
+{
+  .navbar i
+  {
+    opacity: 1;
+  }
+
+  .navbar .navlinks
+  {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    top: -270px;
+    left: 0;
+    width: 100%;
+    padding-top: 1rem;
+    background: rgb(52, 113, 254);
+  }
+
+  .navbar .navlinks.active
+  {
+    top: 70px;
+    transition: all 0.4s ease-in;
+  }
+
+  .navlinks li
+  {
+    margin-bottom: 1.5rem;
+    width: 50%;
+    text-align: center;
+  }
+
+  .navlinks li a
+  {
+    display: block;
+  }
+
+  .navbar .searchbar_container
+  {
+    flex: 0.7;
+    margin-left: 2rem;
+    margin-right: 4rem;
+  }
+
+  .searchbar_container .searchbar
+  {
+    width: 100%;
+  }
+
+}
