@@ -1,17 +1,49 @@
 
-const eye = document.querySelector(".fa-eye-slash");
-const password = document.getElementById("password");
+const eye = document.querySelectorAll(".fa-eye-slash");
+const password = document.querySelectorAll(".password");
 
-eye.addEventListener("click", () =>{
-  if(eye.classList.contains("fa-eye-slash"))
+const member = document.getElementById("member");
+const member2 = document.getElementById("member2");
+const login = document.querySelector(".container1");
+const signup = document.querySelector(".container2");
+
+eye.forEach(eyeIcon =>{
+  eyeIcon.addEventListener("click", () =>{
+    password.forEach(pw =>{
+      if(pw.type === "password")
+      {
+        pw.type = "text";
+        eye.forEach(icon =>{
+          icon.classList.replace("fa-eye-slash", "fa-eye");
+        })
+      }
+      else
+      {
+        pw.type = "password";
+        eye.forEach(icon =>{
+          icon.classList.replace("fa-eye", "fa-eye-slash");
+        })
+      }
+    })
+  })
+})
+
+member.addEventListener("click", () =>{
+  if(login.classList.contains("active"))
   {
-    eye.classList.replace("fa-eye-slash","fa-eye");
-    password.type = "text";
+    login.classList.remove("active");
   }
   else
   {
-    eye.classList.replace("fa-eye","fa-eye-slash");
-    password.type = "password";
+    login.classList.add("active");
+    signup.classList.add("active");
   }
-  
 })
+
+member2.addEventListener("click", () =>{
+  if(signup.classList.contains("active"))
+  {
+    login.classList.remove("active");
+    signup.classList.remove("active");
+  }
+}) 
