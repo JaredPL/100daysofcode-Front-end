@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('w.png') 
+  no-repeat center center/cover;
+}
+
+.container
+{
+  display: flex;
+  flex-direction: column;
+  height:60%;
+  width: 394px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px gray;
+  background: white;
+  padding: 16px 30px;
+}
+
+.container h1
+{
+  letter-spacing: -2px;
+  margin-bottom: 2rem;
+}
+
+.container form
+{
+  flex: 1;
+
+}
+
+form .form-container
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+}
+
+form .form-container input
+{
+  height: 40px;
+  width: 100%;
+  outline: 1.5px solid black;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  padding: 0 3rem 0 2.5rem;
+}
+
+form .form-container .icon
+{
+  position: absolute;
+  top: 40%;
+  left: .7rem;
+}
+
+form .form-container  .icon-p
+{
+  position: absolute;
+  right: .7rem;
+  cursor: pointer;
+}
+
+form input:focus
+{
+  outline: 2px solid rgb(0, 102, 210);
+  background: rgba(0, 102, 210, 0.1);  
+}
+
+form input:focus::placeholder,
+form input:focus + .fa-solid
+{
+  color: rgb(0, 102, 210);
+}
+
+.container .bottom
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.bottom div
+{
+  display: flex;
+}
+
+.bottom div input
+{
+  margin-right: 0.5rem;
+  accent-color: rgb(0, 102, 210);  
+}
+
+.container .bottom a
+{
+  text-decoration: none;
+  color: rgb(0, 102, 210);
+}
+
+.container .bottom a:hover
+{
+  text-decoration: underline;
+}
+
+.container button
+{
+  font-weight: 600;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  height: 3rem;
+  color: white;
+  background: rgb(0, 102, 210);
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.container button:hover
+{
+  background: rgb(1, 110, 225);
+}
+
+.container button:active
+{
+  scale: 0.97;
+}
+
+@media (max-width: 410px)
+{
+  .container .bottom
+  {
+    flex-direction: column;
+    font-size: .8rem;
+  }
+}
