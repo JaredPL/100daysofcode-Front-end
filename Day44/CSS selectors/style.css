@@ -1,0 +1,46 @@
+
+/* Direct child */
+
+span > b
+{
+  background: red;
+}
+
+/* Every li that comes after li.red */
+
+li.red ~ li
+{
+  background-color: green;
+}
+
+/* 1 li that comes a fter li.red */
+
+li.red + li
+{
+  background-color: green;
+}
+
+li:nth-child(1)
+{
+  background: lightskyblue;
+}
+
+li:nth-last-child(2n-1)
+{
+  background: red;
+}
+
+span:first-of-type
+{
+  background: blue;
+}
+
+li:not(.green)
+{
+  background: yellow;
+}
+
+
+
+
+
