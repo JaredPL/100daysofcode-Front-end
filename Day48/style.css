@@ -1,0 +1,26 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --yellow: rgb(242, 186, 2);
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+i
+{
+  font-size: 7rem;
+  cursor: pointer;
+  color: var(--yellow);
+}
